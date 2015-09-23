@@ -2,7 +2,7 @@
 html {padding: 0;}
 body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#FFF;
   font-weight:300;
 }
 
@@ -97,6 +97,7 @@ img {
 header {
   width:100%;
   position:relative;
+  text-align: center;
 }
 
 header ul {
@@ -159,6 +160,7 @@ header ul a strong {
 
 section {
   width: 100%;
+  text-align: center;
 }
 
 small {
@@ -174,6 +176,7 @@ hr {
 
 footer {
   width:100%;
+  text-align: center;
 }
 
 @media print, screen and (max-width: 960px) {
