@@ -1,10 +1,11 @@
 <!doctype html>
 
 <html lang="sv">
+
 <head>
   <meta charset="utf-8">
   <style media="screen">
-    .wrapper{
+    .wrapper {
       height: 100vh;
       display: -webkit-box;
       display: -moz-box;
@@ -18,29 +19,38 @@
       align-items: center;
       background: blue;
     }
+
     .svg-wrapper {
       margin: 0 auto;
       height: 200px;
       width: 200px;
+      /* This is the code that solves it */
       overflow: hidden;
       -webkit-mask-image: url(border-radius.svg);
       mask-image: url(border-radius.svg);
     }
+
     .iframe-wrapper {
-      border-radius: 5px; // Doesn't work
+      /* This doesn't work, illustrational purpose only */
+      border-radius: 5px;
     }
+
     iframe {
       width: 200px;
       height: 200px;
-      border-radius: 5px; // This doesn't work
+      /* This doesn't work, illustrational purpose only */
+      border-radius: 5px;
     }
   </style>
 </head>
+
 <body>
   <div class="wrapper">
     <div class="svg-wrapper">
       <div class="iframe-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4158.701387323084!2d16.176907879847914!3d58.5896201128581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1443014831578" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4158.701387323084!2d16.176907879847914!3d58.5896201128581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1443014831578"
+          width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
