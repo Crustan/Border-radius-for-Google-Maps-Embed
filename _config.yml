@@ -1,8 +1,0 @@
-title: Border-radius-for-google-maps-embed
-description: This is how you create rounded corners on an embedded iframe like Google Maps
-google_analytics: UA-44532489-4
-show_downloads: true
-theme: jekyll-theme-midnight
-
-gems:
-  - jekyll-mentions
