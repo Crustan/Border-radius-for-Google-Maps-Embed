@@ -1,81 +1,95 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Border-radius-for-google-maps-embed by Crustan</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <style media="screen">
-      .map-wrapper{
-        margin: 50px 0;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: center;
-        justify-content: center;
-        align-items: center;
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Border-radius-for-google-maps-embed by Crustan</title>
+
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/github-light.css">
+  <style media="screen">
+    .map-wrapper {
+      margin: 50px 0;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      justify-content: center;
+      align-items: center;
     }
-      .svg-wrapper {
-        margin: 0 auto;
-        height: 250px;
-        width: 500px;
-        overflow: hidden;
-        -webkit-mask-image: url(border-radius.svg);
-        mask-image: url(border-radius.svg);
+
+    .svg-wrapper {
+      margin: 0 auto;
+      height: 250px;
+      width: 500px;
+      /* This is the code that solves it */
+      overflow: hidden;
+      -webkit-mask-image: url(border-radius.svg);
+      mask-image: url(border-radius.svg);
     }
+
     .iframe-wrapper {
-      border-radius: 5px; // Doesn't work
+      /* This doesn't work, illustrational purpose only */
+      border-radius: 5px;
     }
+
     iframe {
       width: 500px;
       height: 250px;
-      border-radius: 5px; // This doesn't work
+      /* This doesn't work, illustrational purpose only */
+      border-radius: 5px;
     }
-      </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Border-radius for embedded Google Maps</h1>
-        <p>A solution to create rounded corners on an embedded iframe like Google Maps.</p>
+</head>
 
-        <p class="view"><a href="https://github.com/Crustan/Border-radius-for-Google-Maps-Embed">View the Project on GitHub <small>Crustan/Border-radius-for-Google-Maps-Embed</small></a></p>
-        <a class="btn" href="https://github.com/Crustan/Border-radius-for-Google-Maps-Embed">View On <strong>GitHub</strong></a>
-      </header>
-      <section>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Border-radius for embedded Google Maps</h1>
+      <p>A solution to create rounded corners on an embedded iframe like Google Maps.</p>
+
+      <p class="view"><a href="https://github.com/Crustan/Border-radius-for-Google-Maps-Embed">View the Project on
+          GitHub <small>Crustan/Border-radius-for-Google-Maps-Embed</small></a></p>
+      <a class="btn" href="https://github.com/Crustan/Border-radius-for-Google-Maps-Embed">View On
+        <strong>GitHub</strong></a>
+    </header>
+    <section>
       <div class="map-wrapper">
         <div class="svg-wrapper">
           <div class="iframe-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4158.701387323084!2d16.176907879847914!3d58.5896201128581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1443014831578" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4158.701387323084!2d16.176907879847914!3d58.5896201128581!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1443014831578"
+              width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/Crustan">Crustan</a></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-44532489-4");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    </section>
+    <footer>
+      <p>This project is maintained by <a href="https://github.com/Crustan">Crustan</a></p>
+    </footer>
+  </div>
+  <script src="javascripts/scale.fix.js"></script>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-44532489-4");
+      pageTracker._trackPageview();
+    } catch (err) {
+      console.log(err);
+    }
+  </script>
+</body>
 
-  </body>
 </html>
